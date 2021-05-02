@@ -19,6 +19,15 @@ namespace Roblox_Cheats
         public MainWindow()
         {
             InitializeComponent();
+
+            string serverVersion = webClient.DownloadString("https://rbxloader.000webhostapp.com/version");
+            string clientVersion = "1.0";
+            if(clientVersion != serverVersion == true)
+            {
+                MessageBox.Show("This version outdated");
+                Application.Current.Shutdown();
+            }
+
             Cheats_Name[0] = "KRNL";
             Cheats_Name[1] = "Robloxware";
             Cheat1Name_text.Text = Cheats_Name[0];
