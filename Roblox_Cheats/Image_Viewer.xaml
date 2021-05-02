@@ -1,0 +1,24 @@
+﻿<Window x:Class="Roblox_Cheats.Image_Viewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Roblox_Cheats"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Image_Viewer"
+        Topmost="True" AllowsTransparency="True" Background="{x:Null}" WindowStyle="None" WindowState="Maximized" Width="750" Height="500">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#CC1E1E1E"/>
+        </Grid.Background>
+        <StackPanel Height="50" VerticalAlignment="Top" Panel.ZIndex="1" Background="#F21E1E1E">
+            <Grid Height="50">
+                <Button x:Name="ButtonClose" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="LightGray" Click="ButtonClose_Click" HorizontalAlignment="Right">
+                    <materialDesign:PackIcon Kind="Close" Width="50" Height="50"/>
+                </Button>
+            </Grid>
+        </StackPanel>
+        <Image x:Name="pictureBox" Stretch="Fill"/>
+    </Grid>
+</Window>
