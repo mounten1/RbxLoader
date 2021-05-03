@@ -79,7 +79,7 @@ namespace Roblox_Cheats
         private void MoveCursorMenu(int index)
         {
             TrainsitionigContentSlide.OnApplyTemplate();
-            GridCursor.Margin = new Thickness(0, ((60 * index)), 0, 0);
+            GridCursor.Margin = new Thickness(0, ((40 * index)), 0, 0);
         }
     }
 }

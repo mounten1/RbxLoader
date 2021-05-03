@@ -171,7 +171,7 @@
     </UserControl.Resources>
 
     <Grid>
-        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:1.0}">
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromRight, Duration=0:0:1.0}">
             <Grid>
                 <Border Margin="0,30,30,20" HorizontalAlignment="Right" VerticalAlignment="Center" Height="375" Width="150" BorderThickness="1,1,1,1" CornerRadius="20,20,20,20" Background="#FF1E1E1E">
                     <Grid>
@@ -185,22 +185,22 @@
                 <Grid>
                     <Border Width="200" Height="125" BorderThickness="1,1,1,1" CornerRadius="20,20,20,20" Margin="255,30,195,0" HorizontalAlignment="Center" VerticalAlignment="Top" MouseLeftButtonDown="Border_MouseLeftButtonDown">
                         <Border.Background>
-                            <ImageBrush x:Name="Picture2Image" Stretch="Uniform" ImageSource="background.jpg"/>
+                            <ImageBrush x:Name="Picture2Image" Stretch="UniformToFill" ImageSource="background.jpg"/>
                         </Border.Background>
                     </Border>
                     <Border Width="200" Height="125" BorderThickness="1,1,1,1" CornerRadius="20,20,20,20"  Margin="40,30,410,0" HorizontalAlignment="Center" VerticalAlignment="Top" MouseLeftButtonDown="Border_MouseLeftButtonDown_1">
                         <Border.Background>
-                            <ImageBrush x:Name="Picture1Image" Stretch="Uniform" ImageSource="background.jpg"/>
+                            <ImageBrush x:Name="Picture1Image" Stretch="UniformToFill" ImageSource="background.jpg"/>
                         </Border.Background>
                     </Border>
                     <Border Width="200" Height="125" BorderThickness="1,1,1,1" CornerRadius="20,20,20,20" Margin="255,176,195,0" HorizontalAlignment="Center" VerticalAlignment="Top" MouseLeftButtonDown="Border_MouseLeftButtonDown_3">
                         <Border.Background>
-                            <ImageBrush x:Name="Picture4Image" Stretch="Uniform" ImageSource="background.jpg"/>
+                            <ImageBrush x:Name="Picture4Image" Stretch="UniformToFill" ImageSource="background.jpg"/>
                         </Border.Background>
                     </Border>
                     <Border Width="200" Height="125" BorderThickness="1,1,1,1" CornerRadius="20,20,20,20" Margin="40,176,410,0" HorizontalAlignment="Center" VerticalAlignment="Top" MouseLeftButtonDown="Border_MouseLeftButtonDown_2">
                         <Border.Background>
-                            <ImageBrush x:Name="Picture3Image" Stretch="Uniform" ImageSource="background.jpg"/>
+                            <ImageBrush x:Name="Picture3Image" Stretch="UniformToFill" ImageSource="background.jpg"/>
                         </Border.Background>
                     </Border>
                

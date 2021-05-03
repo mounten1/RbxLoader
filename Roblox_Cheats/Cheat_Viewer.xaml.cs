@@ -108,8 +108,8 @@ namespace Roblox_Cheats
 
 
             DescriptionTxt.Text = textDescription;
-            CreatorTxt.Text = textCreator;
-            VersionTxt.Text = textVersion;
+            CreatorTxt.Text = "Создатель: " + textCreator;
+            VersionTxt.Text = "Версия: " + textVersion;
 
 
             if (File.Exists(CheatPath + "\\1.png") == false)
