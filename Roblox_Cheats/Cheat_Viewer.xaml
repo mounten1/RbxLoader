@@ -206,7 +206,7 @@
                
                 </Grid>
                 <Border Width="200" Height="30" BorderThickness="1,1,1,1" CornerRadius="15,15,15,15" Background="#FF1E1E1E" Margin="153,375,297,0" HorizontalAlignment="Center" VerticalAlignment="Top">
-                    <Button Background="{x:Null}"  materialDesign:RippleAssist.Feedback="Transparent" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Width="200" Height="30" Click="Button_Click">
+                    <Button x:Name="Button1" Background="{x:Null}"  materialDesign:RippleAssist.Feedback="Transparent" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Width="200" Height="30" Click="Button_Click">
                         <Grid>
                             <TextBlock x:Name="DownloadText" Text="Скачать и запустить" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Foreground="LightGray" TextAlignment="Center" FontFamily="Segoe UI Symbol"/>
                             <ProgressBar x:Name="progressBar" HorizontalAlignment="Center" Height="13" Margin="0" VerticalAlignment="Center" Width="186"/>

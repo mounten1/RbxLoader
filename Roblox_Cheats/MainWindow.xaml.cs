@@ -30,8 +30,12 @@ namespace Roblox_Cheats
 
             Cheats_Name[0] = "KRNL";
             Cheats_Name[1] = "Robloxware";
+            Cheats_Name[2] = "Oxygen";
+            Cheats_Name[3] = "RoxiSploit";
             Cheat1Name_text.Text = Cheats_Name[0];
             Cheat2Name_text.Text = Cheats_Name[1];
+            Cheat3Name_text.Text = Cheats_Name[2];
+            Cheat4Name_text.Text = Cheats_Name[3];
 
             if (Directory.Exists(mainPath) == true)
             {
@@ -70,6 +74,14 @@ namespace Roblox_Cheats
                 case 1:
                     GridPrincipal.Children.Clear();
                     GridPrincipal.Children.Add(new Cheat_View(Cheats_Name[1]));
+                    break;
+                case 2:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Cheat_View(Cheats_Name[2]));
+                    break;
+                case 3:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Cheat_View(Cheats_Name[3]));
                     break;
                 default:
                     break;

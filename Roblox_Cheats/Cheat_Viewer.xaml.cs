@@ -149,6 +149,7 @@ namespace Roblox_Cheats
             {
                 DownloadText.Visibility = Visibility.Hidden;
                 progressBar.Visibility = Visibility.Visible;
+                DownloadText.IsEnabled = false;
                 webClient1.DownloadFileAsync(new Uri("https://rbxloader.000webhostapp.com/" + cheatName + "/" + cheatName + ".zip"), CheatPath + "\\" + cheatName + ".zip");
             }
             else
@@ -180,6 +181,7 @@ namespace Roblox_Cheats
             string extractPath = CheatPath;
 
             ZipFile.ExtractToDirectory(zipPath, extractPath);
+            Button1.IsEnabled = true;
             DownloadText.Text = "Запустить";
         }
     }
